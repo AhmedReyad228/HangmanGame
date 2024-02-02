@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? ======>> Title ========>> -->
+    <title>Hangman Game</title>
+
+    <!-- * ======>> Roboto-Mono Font ========>> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ! ======>> Fontawesome ========>> -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- * ======>> BootStrap ========>> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ? ======>> My CSS ========>>  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="game-name text-white">Hangman</div>
+        <div class="category text-white">Word From: <span></span></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-6 hanging">
+          <div class="hangman-draw">
+            <div class="the-draw">
+              <div class="the-stand"></div>
+              <div class="the-hang"></div>
+              <div class="the-rope"></div>
+              <div class="the-man">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="hands"></div>
+                <div class="legs"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="letters"></div>
+        </div>
+      </div>
+      <div class="gesser text-center">
+        <span id="category"></span>
+        <span id="charNum"></span>
+      </div>
+      <hr />
+      <div class="letters-guess"></div>
+    </div>
+
+    <div class="in-fail d-none">
+      <div class="faild d-none">
+        <div id="close">
+          <i class="fas fa-xmark-circle fa-2xl"></i>
+        </div>
+        <div class="text-center">
+          <h3>
+            <i class="fas fa-exclamation-circle fa-xl"></i> Oops! You Faild
+          </h3>
+          <h4 class="text-white">
+            Correct word: <span class="theCorrect"></span>
+          </h4>
+        </div>
+      </div>
+      <div class="success d-none">
+        <div id="close2">
+          <i class="fas fa-xmark-circle fa-2xl"></i>
+        </div>
+        <h3><i class="fas fa-check-circle fa-xl"></i> Great Job!</h3>
+      </div>
+    </div>
+
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio
+      id="finalSuccess"
+      src="audio/final success.mp3"
+      preload="auto"
+    ></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <audio id="finalFail" src="audio/final fail.mp3" preload="auto"></audio>
+
+    <!-- ? ======>> jquery JS ========>> -->
+    <script src="Java script/jquery-3.7.1.min.js"></script>
+    <!-- ? ======>> BootStrap JS ========>> -->
+    <script src="Java script/bootstrap.bundle.min.js"></script>
+    <!-- ! ======>> Fontawesome JS ========>> -->
+    <script src="Java script/all.min.js"></script>
+    <!-- * ======>> JS ========>> -->
+    <script src="Java script/index.js"></script>
+  </body>
+</html>
